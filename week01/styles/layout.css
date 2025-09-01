@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "header header header"
         "nav nav nav"
         "main main aside"
