@@ -2,13 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; URL=week01/basic-layout.html">
-
-    <title>WDD 131</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131: Dynamic Web Fundamentals - Yesid Augusto Romero Ruiz</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131- Yesid Romero</h1>
-    
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals – <span class="highlight">Yesid Augusto Romero Ruiz</span></h1>
+    </header>
+    <nav>
+        <a href="#">LinkedIn</a>
+        <a href="#">Canvas</a>
+        <a href="#">Scripture</a>
+        <a href="#">Final Project</a>
+    </nav>
+    <main>
+        <section class="container">
+            <section class="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div>
+                        <p>My name is <strong>Yesid Augusto Romero Ruiz</strong>. I was born in Cachipay,
+                        Cundinamarca, Colombia, and I have been married for 20 years. I have three wonderful
+                        children and currently live in Bogotá, Colombia. I work as a rideshare driver because
+                        this role gives me both income and the flexibility to focus on my studies. However,
+                        my greatest aspiration is to build a career in software development.<br><br>
+                        I hold a B2+ level in English proficiency and, in my previous professional life,
+                        developed a strong trajectory in the fast-moving consumer goods sector,
+                        where I rose to the position of Sales Manager. This experience endowed me with valuable
+                        <strong>soft skills</strong> for software development, including:</p>
+                        <ul>
+                            <li>Effective communication</li>
+                            <li>Problem-solving</li>
+                            <li>Negotiation</li>
+                            <li>Team leadership</li>
+                            <li>Goal orientation</li>
+                            <li>Analytical thinking</li>
+                            <li>Adaptability</li>
+                        </ul>
+                        <p>I am passionate about reading books on personal development and Stoicism, which continually
+                        inspire me to grow and maintain resilience in all aspects of my life.</p>
+                    </div>
+                    <div class="profile-img">
+                        <img src="images/Yotrabajo.jpg" alt="Yesid Augusto Romero Ruiz photo" width="120" height="150" style="border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+                <hr>
+                <div class="location">
+                    <h3>Cachipay, Cundinamarca, Colombia</h3>
+                    <div class="flag-description">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg" alt="Official Flag of Colombia" width="100" height="100">
+                        <span class="flag-caption">Official Flag of Colombia</span>
+                        <p>Cachipay is a picturesque town in Cundinamarca, Colombia, known for its lush landscapes and peaceful
+                        atmosphere. Bogotá, where I reside, is the vibrant capital, full of opportunities for personal and
+                        professional growth.</p>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                    <li><a href="https://www.placeholder.com/" target="_blank">Image Placeholder</a></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Yesid Augusto Romero Ruiz Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
