@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temple Album</title>
+  <meta name="description" content="Temple Album displays beautiful LDS temples with location information in a responsive grid." />
+  <meta name="author" content="Yesid Augusto Romero Ruiz" />
+  <!-- Mobile-first CSS first, then large screens -->
+  <link rel="stylesheet" href="styles/temples.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>Temple Album</h1>
+      <button class="menu-toggle" aria-label="Open navigation menu">&#9776;</button>
+      <ul class="nav-menu">
+        <li><a href="temples.html">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="album">
+      <h2>Home</h2>
+      <div class="temple-grid">
+        <figure>
+          <img src="images/oaklandCalifornia.jpeg" alt="Oakland California Temple" />
+          <figcaption>Oakland California</figcaption>
+        </figure>
+        <figure>
+          <img src="images/BogotaTemple.jpeg" alt="Bogota Colombia Temple" />
+          <figcaption>Bogota City</figcaption>
+        </figure>
+        <figure>
+          <img src="images/SaltLakecitytemple.webp" alt="Salt Lake City Temple" />
+          <figcaption>Salt Lake City</figcaption>
+        </figure>
+        <figure>
+          <img src="images/MexicoCityTemple.jpeg" alt="Mexico City Temple" />
+          <figcaption>Mexico City</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ArizonaTemplejpg.jpg" alt="Arizona Temple" />
+          <figcaption>Arizona</figcaption>
+        </figure>
+        <figure>
+          <img src="images/WashingtonTemple.jpeg" alt="Washington Temple" />
+          <figcaption>Washington</figcaption>
+        </figure>
+        <figure>
+          <img src="images/ParisTemple.jpeg" alt="Paris France Temple" />
+          <figcaption>Paris City</figcaption>
+        </figure>
+        <figure>
+          <img src="images/RomeTemple.jpeg" alt="Rome Italy Temple" />
+          <figcaption>Rome City</figcaption>
+        </figure>
+        <figure>
+          <img src="images/TokyoTemple.jpeg" alt="Tokyo Japan Temple" />
+          <figcaption>Tokyo City</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>
+      &copy;2025 🚀 Yesid Augusto Romero Ruiz 🚀 Colombia<br />
+      Last Modification: <span id="modification"></span>
+    </p>
+  </footer>
+  <script src="scripts/temples.js" defer></script>
+</body>
+</html>
