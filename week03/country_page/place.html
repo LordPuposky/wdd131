@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Colombia — Discover Its Beauty</title>
+  <meta name="description" content="Discover Colombia: Essential facts, weather, and vibrant photography in a responsive layout. Created by Yesid Augusto Romero Ruiz." />
+  <meta name="author" content="Yesid Augusto Romero Ruiz" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+</head>
+<body>
+  <header>
+    <h1>Colombia</h1>
+  </header>
+  <main>
+    <div class="flag-panel">
+      <!-- Left info box -->
+      <div class="info-box data-box">
+        <h2>Data</h2>
+        <ul>
+          <li><strong>Area:</strong> 1,141,748 km²</li>
+          <li><strong>Population:</strong> 51,874,024</li>
+          <li><strong>Capital:</strong> Bogotá</li>
+          <li><strong>Languages:</strong> Spanish</li>
+          <li><strong>Currency:</strong> Colombian Peso</li>
+          <li><strong>Time Zone:</strong> UTC-5</li>
+          <li><strong>Calling Code:</strong> +57</li>
+          <li><strong>Internet TLD:</strong> .co</li>
+        </ul>
+      </div>
+      <!-- Center images side by side -->
+      <div class="image-row">
+        <img class="main-img" src="images/Colombia-caficultor.webp" alt="Colombian coffee farm landscape" />
+        <img class="sub-img" src="images/San_andres.webp" alt="San Andres island beach view in Colombia" />
+      </div>
+      <!-- Right info box -->
+      <div class="info-box weather-box">
+        <h2>Weather</h2>
+        <ul>
+          <li><strong>Temperature:</strong> <span id="temp">10 °C</span></li>
+          <li><strong>Conditions:</strong> <span id="conditions">Partly Cloudy</span></li>
+          <li><strong>Wind:</strong> <span id="wind">5 km/h</span></li>
+          <li><strong>Wind Chill:</strong> <span id="windchill">10 °C</span></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p id="copyright">&copy; 2025 Yesid Augusto Romero Ruiz — Colombia</p>
+    <p>Last Modification: <span id="last-mod"></span></p>
+  </footer>
+  <script src="js/place.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@media (max-width: 950px) {
+  .flag-panel {
+    flex-direction: column;  /* stack vertically on narrow */
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1.5rem;
+  }
+  .info-box {
+    width: 90vw;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .image-row {
+    max-width: 95vw;
+    gap: 0.7rem;
+    width: 100%;
+  }
+  .image-row img {
+    width: 48vw !important;
+    height: 180px !important;
+  }
+}

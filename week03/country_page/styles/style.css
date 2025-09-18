@@ -1,0 +1,146 @@
+:root {
+  --primary-color: #FFD700;     /* Yellow */
+  --secondary-color: #0033A0;   /* Blue */
+  --tertiary-color: #D52B1E;    /* Red */
+  --header-bg: #FFD700;
+  --footer-bg: #D52B1E;
+  --flag-row-bg: #0033A0;
+  --data-header: #0033A0;
+  --weather-header: #D52B1E;
+  --text-color: #222;
+  --max-width: 1260px;
+  --box-width: 280px;
+  --box-radius: 14px;
+  --spacing: 1.2rem;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  background: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100vw;
+  background: var(--header-bg);
+  color: var(--secondary-color);
+  padding: 2rem 0 1.2rem 0;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  border-bottom: 9px solid var(--secondary-color);
+}
+
+.flag-panel {
+  background: var(--flag-row-bg);
+  width: 100vw;
+  padding: 3rem 0 3rem 0;
+  display: flex;
+  justify-content: space-between; /* spread children */
+  align-items: flex-start;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* allow wrapping on narrow screens */
+}
+
+/* Info boxes on sides with spacing to edges */
+.info-box {
+  background: #fff;
+  width: var(--box-width);
+  border-radius: var(--box-radius);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.14);
+  padding: 1.4rem 1.1rem;
+  min-width: 220px;
+  max-width: 95vw;
+  /* Add margin to push them towards corners */
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Data box pushed far left */
+.data-box {
+  margin-left: 5rem; /* override to left edge */
+}
+
+/* Weather box pushed far right */
+.weather-box {
+  margin-right: 5rem; /* override to right edge */
+}
+
+/* Headers inside info boxes */
+.data-box h2 {
+  background: var(--data-header);
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.weather-box h2 {
+  background: var(--weather-header);
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.weather-box h2::after {
+  content: " ⛅";
+  margin-left: 0.8rem;
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+
+/* Lists in info boxes */
+.info-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.info-box li {
+  margin-bottom: 0.8rem;
+}
+
+.info-box li strong {
+  font-weight: 700;
+  margin-right: 0.4rem;
+}
+
+/* Image container with two images side by side */
+.image-row {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* grow to fill space */
+  max-width: 760px;
+}
+
+/* Both images same size */
+.image-row img {
+  width: 48%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  width: 100vw;
+  background: var(--footer-bg);
+  color: white;
+  text-align: center;
+  padding: 1.3rem 0 1rem 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.6px;
+  margin: 0;
+}
