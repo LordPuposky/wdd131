@@ -1,15 +1,7 @@
 // Function to calculate wind chill based on temperature (Celsius) and wind speed (km/h)
 // Returns the wind chill as a rounded number or "N/A" if conditions are not met
 function calculateWindChill(temperature, windSpeed) {
-  // Viable conditions: Temp <= 10°C and Wind > 4.8 km/h
-  if (temperature <= 10 && windSpeed > 4.8) {
-    // Formula for Celsius wind chill
-    return Math.round(
-      13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16)
-    );
-  } else {
-    return "N/A";
-  }
+  return Math.round(13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16));
 }
 
 // On DOMContentLoaded, update footer and wind chill display
@@ -29,10 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const temperature = 10; // °C
   const windSpeed = 5; // km/h
 
-  // Calculate wind chill and update page
-  const windChillValue = calculateWindChill(temperature, windSpeed);
+  // Calculate wind chill and update page ONLY if conditions are met (per rubric)
   const windChillElem = document.getElementById("windchill");
   if (windChillElem) {
-    windChillElem.textContent = typeof windChillValue === "number" ? `${windChillValue} °C` : windChillValue;
+    if (temperature <= 10 && windSpeed > 4.8) {
+      const windChillValue = calculateWindChill(temperature, windSpeed);
+      windChillElem.textContent = `${windChillValue} °C`;
+    } else {
+      windChillElem.textContent = "N/A";
+    }
   }
 });
