@@ -39,34 +39,29 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-  /* Container de imágenes */
+  
   .image-row {
     max-width: 90vw;
     gap: 1rem;
     width: 100%;
   }
-
-  /* Imágenes en móvil */
+ 
   .image-row img {
     width: 42vw !important;
     height: 200px !important;
   }
-
-  /* SVG del clima - Solo visible en móvil */
+  
   .weather-icon-mobile {
     display: block;
     margin: 1rem auto;
     text-align: center;
   }
 
-  /* Ocultar emoticon del título en móvil */
   .weather-box h2::after {
     display: none;
   }
 }
 
-/* Para pantallas muy pequeñas - apilar imágenes verticalmente */
 @media (max-width: 600px) {
   header h1 {
     font-size: 2rem;
@@ -87,7 +82,6 @@
   }
 }
 
-/* CSS base para SVG - oculto en desktop */
 .weather-icon-mobile {
   display: none;
 }
