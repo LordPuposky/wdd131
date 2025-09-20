@@ -8,13 +8,17 @@ function calculateWindChill(temperature, windSpeed) {
 document.addEventListener("DOMContentLoaded", () => {
   // Set current year in footer
   const currentYear = new Date().getFullYear();
+  
+  // Update copyright paragraph specifically
+  const copyrightElem = document.getElementById("copyright");
+  if (copyrightElem) {
+    copyrightElem.textContent = `© ${currentYear} Yesid Augusto Romero Ruiz — Colombia`;
+  }
+  
+  // Update last modification date
   const lastModElem = document.getElementById("last-mod");
   if (lastModElem) {
     lastModElem.textContent = document.lastModified;
-  }
-  const footer = document.querySelector("footer p");
-  if (footer) {
-    footer.textContent = `© ${currentYear} Yesid Augusto Romero Ruiz — Colombia`;
   }
 
   // Static weather data (match your page static data)
