@@ -1,23 +1,93 @@
+@media (max-width: 767px) { }
+@media (min-width: 768px) and (max-width: 820px) { }
+@media (min-width: 821px) and (max-width: 1024px) { }
+@media (min-width: 1025px) { }
 @media (max-width: 950px) {
+  /* Header responsive */
+  header {
+    padding: 1.5rem 1rem;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+  }
+
+  /* Layout principal */
   .flag-panel {
-    flex-direction: column;  /* stack vertically on narrow */
+    flex-direction: column;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     gap: 1.5rem;
   }
+
+  /* Info boxes */
   .info-box {
     width: 90vw;
-    max-width: none;
-    margin-left: 0;
-    margin-right: 0;
+    max-width: 400px;
+    margin: 0 auto;
   }
+  
+  /* Reset margins específicos para móvil */
+  .data-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .weather-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Container de imágenes */
   .image-row {
-    max-width: 95vw;
-    gap: 0.7rem;
+    max-width: 90vw;
+    gap: 1rem;
     width: 100%;
   }
+
+  /* Imágenes en móvil */
   .image-row img {
-    width: 48vw !important;
+    width: 42vw !important;
+    height: 200px !important;
+  }
+
+  /* SVG del clima - Solo visible en móvil */
+  .weather-icon-mobile {
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  /* Ocultar emoticon del título en móvil */
+  .weather-box h2::after {
+    display: none;
+  }
+}
+
+/* Para pantallas muy pequeñas - apilar imágenes verticalmente */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .image-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .image-row img {
+    width: 85vw !important;
     height: 180px !important;
   }
+
+  .info-box {
+    width: 95vw;
+  }
+}
+
+/* CSS base para SVG - oculto en desktop */
+.weather-icon-mobile {
+  display: none;
 }

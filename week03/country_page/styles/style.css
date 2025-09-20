@@ -1,6 +1,6 @@
 :root {
   --primary-color: #FFD700;     /* Yellow */
-  --secondary-color: #0033A0;   /* Blue */
+  --secondary-color: #001a66;   /* Blue */
   --tertiary-color: #D52B1E;    /* Red */
   --header-bg: #FFD700;
   --footer-bg: #D52B1E;
@@ -24,8 +24,8 @@ body {
 
 header {
   width: 100vw;
-  background: var(--header-bg);
-  color: var(--secondary-color);
+  background: var(--header-bg); /* #FFD700 - Amarillo */
+  color: #001a66; /* Azul más oscuro para mejor contraste */
   padding: 2rem 0 1.2rem 0;
   text-align: center;
   font-size: 3rem;
@@ -60,12 +60,12 @@ header {
 
 /* Data box pushed far left */
 .data-box {
-  margin-left: 5rem; /* override to left edge */
+  margin-left: 3rem; /* override to left edge */
 }
 
 /* Weather box pushed far right */
 .weather-box {
-  margin-right: 5rem; /* override to right edge */
+  margin-right: 3rem; /* override to right edge */
 }
 
 /* Headers inside info boxes */
@@ -143,4 +143,26 @@ footer {
   font-size: 1.1rem;
   letter-spacing: 0.6px;
   margin: 0;
+}
+
+.flag-panel {
+  gap: 2rem; /* En lugar de usar solo justify-content: space-between */
+}
+
+.image-row img {
+  border-radius: 12px; /* Mantener consistencia */
+}
+
+.info-box {
+  border-radius: 12px; /* Consistente con imágenes */
+}
+
+@media (max-width: 950px) {
+  .data-box {
+    margin-left: 0 !important;
+  }
+  
+  .weather-box {
+    margin-right: 0 !important;
+  }
 }
