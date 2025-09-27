@@ -1,20 +1,25 @@
 // Function to calculate wind chill based on temperature (Celsius) and wind speed (km/h)
 // Returns the wind chill as a rounded number or "N/A" if conditions are not met
 function calculateWindChill(temperature, windSpeed) {
-  return Math.round(13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16));
+  return Math.round(
+    13.12 +
+      0.6215 * temperature -
+      11.37 * Math.pow(windSpeed, 0.16) +
+      0.3965 * temperature * Math.pow(windSpeed, 0.16)
+  );
 }
 
 // On DOMContentLoaded, update footer and wind chill display
 document.addEventListener("DOMContentLoaded", () => {
   // Set current year in footer
   const currentYear = new Date().getFullYear();
-  
+
   // Update copyright paragraph specifically
   const copyrightElem = document.getElementById("copyright");
   if (copyrightElem) {
     copyrightElem.textContent = `© ${currentYear} Yesid Augusto Romero Ruiz — Colombia`;
   }
-  
+
   // Update last modification date
   const lastModElem = document.getElementById("last-mod");
   if (lastModElem) {
