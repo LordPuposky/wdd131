@@ -1,0 +1,43 @@
+table {
+  width: 480px;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-family: Arial, sans-serif;
+}
+th, td {
+  border: 1px solid #666;
+  padding: 0.6em 1em;
+  text-align: center;
+}
+caption {
+  caption-side: bottom;
+  margin-top: 0.4em;
+  font-size: 1em;
+}
+.main-head {
+  background: #000;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+.col-head {
+  background: #888;
+  color: #fff;
+  font-weight: bold;
+}
+tbody tr:nth-child(even) {
+  background: #f4f4f4;
+}
+tbody tr:nth-child(odd) {
+  background: #fff;
+}
+td {
+  font-size: 1.1em;
+}
+td:contains('✔️') {
+  color: green;
+}
+td:contains('❌') {
+  color: brown;
+}
