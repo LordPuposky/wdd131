@@ -1,0 +1,46 @@
+@media (min-width: 768px) {
+  /* Hide hamburger menu on larger screens */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Navigation horizontal on larger screens */
+  nav.navbar ul.nav-menu {
+    display: flex !important; /* Always show menu in desktop */
+    flex-direction: row;
+    width: auto;
+    margin-top: 0;
+  }
+
+  nav.navbar ul.nav-menu li {
+    margin: 0 0.8rem;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  /* Grid with 3 columns on desktop */
+  .temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  /* Temple card styling for desktop */
+  .temple-card {
+    border-radius: 12px;
+  }
+
+  .temple-card img {
+    border-radius: 8px;
+    border: 4px solid white;
+  }
+
+  .temple-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .temple-card p {
+    font-size: 1.08rem;
+  }
+}
