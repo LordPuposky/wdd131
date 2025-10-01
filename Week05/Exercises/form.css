@@ -1,0 +1,95 @@
+:root {
+  --col-yellow: #FFD600;
+  --col-blue: #0033A0;
+  --col-red: #EF3340;
+  --background: #FFFBE6;
+  --text: #222;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+}
+main {
+  max-width: 410px;
+  margin: 2em auto;
+  background: #fffbe6;
+  border-radius: 12px;
+  padding: 2em;
+  box-shadow: 0 0 18px #0033A088;
+  border: 3px solid var(--col-blue);
+}
+h1 {
+  text-align: center;
+  color: var(--col-blue);
+  background: var(--col-yellow);
+  padding: 0.5em;
+  border-radius: 8px;
+  border-bottom: 3px solid var(--col-red);
+  margin-bottom: 1em;
+}
+form label, form legend {
+  display: block;
+  margin-top: 1em;
+}
+fieldset {
+  border: 2px solid var(--col-blue);
+  margin: 1em 0;
+  border-radius: 5px;
+  padding: 0.5em;
+  background: #e9f0ff;
+}
+input, select, textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: .5em;
+  margin-top: .5em;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  border: 1.5px solid var(--col-yellow);
+  font-size: 1em;
+  background: #FFFBE6;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: .4em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+input[type="submit"] {
+  background: var(--col-red);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background .2s;
+  font-size: 1.1em;
+  border-radius: 8px;
+  padding: 0.8em 0;
+  border-bottom: 2px solid var(--col-blue);
+}
+input[type="submit"]:hover {
+  background: var(--col-blue);
+  color: var(--col-yellow);
+  border-bottom: 2px solid var(--col-red);
+}
+footer {
+  background: var(--col-yellow);
+  color: var(--col-blue);
+  text-align: center;
+  padding: .8em 0;
+  margin-top: 2em;
+  font-weight: bold;
+  border-top: 3px solid var(--col-red);
+}
+footer p {
+  margin: 5px 0;
+}
+@media (max-width: 600px) {
+  main {
+    padding: 1em;
+    max-width: 98vw;
+  }
+}
