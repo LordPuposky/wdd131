@@ -1,0 +1,107 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* Fondo bandera colombiana suave */
+  background: linear-gradient(
+    to bottom,
+    #FFF4A3 0%,    /* amarillo suave */
+    #FFF4A3 50%,   /* amarillo suave */
+    #A8C8EC 75%,   /* azul suave */
+    #F5A3A3 100%   /* rojo suave */
+  );
+  color: #333;
+}
+
+main {
+  max-width: 370px;
+  margin: 4em auto 2em auto;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 2em 1.3em;
+  box-shadow: 0 8px 32px rgba(0, 51, 160, 0.16);
+  border: 3px solid #6B9BD2;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  text-align: center;
+  color: #C4504A;
+  background: linear-gradient(135deg, #FFF4A3, #FFE55C);
+  padding: 0.6em 0;
+  border-radius: 12px;
+  border-bottom: 3px solid #6B9BD2;
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 1em 0;
+}
+
+#reviewCount {
+  font-weight: bold;
+  color: #C4504A;
+  font-size: 1.2em;
+}
+
+a {
+  color: #C4504A;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border: 2px solid #C4504A;
+  border-radius: 8px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  background: #C4504A;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(196, 80, 74, 0.3);
+}
+
+footer {
+  width: 100%;
+  max-width: 500px;
+  margin: 2em auto 2em auto; /* separa el footer del final de la pantalla */
+  background: linear-gradient(135deg, #4A7BC8 70%, #6B9BD2 100%);
+  color: #FFF4A3;
+  text-align: center;
+  padding: 2em 1em 1.3em 1em;
+  font-size: 1.07em;
+  font-weight: bold;
+  border-top: 6px solid #C4504A;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -4px 16px rgba(0,0,0,0.13);
+  border: 3px solid #6B9BD2;
+}
+
+footer p {
+  margin: 12px 0;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1.5em;
+    max-width: 94vw;
+    margin-top: 1.5em;
+  }
+  
+  footer {
+    max-width: 94vw;
+    padding: 1.5em 0.5em 1em 0.5em;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+  }
+}

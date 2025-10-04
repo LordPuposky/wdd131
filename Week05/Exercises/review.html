@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Review Confirmation</title>
-  <link rel="stylesheet" href="styles/form.css">
+  <title>Thank you for your review!</title>
+  <link rel="stylesheet" href="review.css">
 </head>
 <body>
   <main>
@@ -14,8 +14,8 @@
     <a href="form.html">Submit another review</a>
   </main>
   <footer>
-    <p>©2024 🌸 Rubia Magdelena Francesco 🌸 Madagascar</p>
-    <p>Last Modification: 02/26/2024 13:56:10</p>
+    <p>©2025 🎶 Yesid Augusto Romero Ruiz 🎶  Colombia 🇨🇴</p>
+    <p id="footer-date"></p>
   </footer>
   <script>
     // Counter with localStorage
@@ -23,6 +23,9 @@
     count++;
     localStorage.setItem('reviewCount', count);
     document.getElementById('reviewCount').textContent = count;
+    // Fecha de última modificación automática
+    document.getElementById('footer-date').textContent =
+      'Last Modification: ' + document.lastModified;
   </script>
 </body>
 </html>
