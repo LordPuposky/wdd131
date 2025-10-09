@@ -18,12 +18,10 @@
     <p id="footer-date"></p>
   </footer>
   <script>
-    // Counter with localStorage
     let count = localStorage.getItem('reviewCount') || 0;
     count++;
     localStorage.setItem('reviewCount', count);
     document.getElementById('reviewCount').textContent = count;
-    // Fecha de última modificación automática
     document.getElementById('footer-date').textContent =
       'Last Modification: ' + document.lastModified;
   </script>
