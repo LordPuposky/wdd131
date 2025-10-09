@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Story | Augusto Dev</title>
+  <meta name="description" content="Personal story, values, and mission of Augusto Dev">
+  <!-- Main project styles -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- HEADER: Copy the exact header code from index.html to keep consistency -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-section">
+        <img src="images/logo.png" alt="Augusto Dev Logo" class="logo" loading="lazy">
+        <h1 class="site-title">Augusto Dev</h1>
+      </div>
+      <nav class="nav-main">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link" data-es="Inicio" data-en="Home">Home</a></li>
+          <li><a href="about.html" class="nav-link active" data-es="Sobre mí" data-en="About">About</a></li>
+          <li><a href="projects.html" class="nav-link" data-es="Proyectos" data-en="Projects">Projects</a></li>
+          <li><a href="tracker.html" class="nav-link" data-es="Tracker" data-en="Tracker">Tracker</a></li>
+          <li><a href="contact.html" class="nav-link" data-es="Contacto" data-en="Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-controls">
+        <!-- Theme switch button (dark/light) -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Change theme">
+          <span class="theme-icon"></span>
+        </button>
+        <!-- Language switch button (English/Spanish) -->
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language" title="Change language">
+          <span class="lang-text">EN</span>
+        </button>
+        <!-- Mobile menu button -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- HERO SECTION: Black & white profile photo and brief introduction -->
+    <section class="hero about-hero">
+      <div class="hero-container">
+        <div class="hero-image">
+          <!-- Replace this image with your real photo (keep file name or update path as needed) -->
+          <img src="images/your-bnw-photo.jpg" alt="Augusto Dev Profile Photo" class="profile-image loading-lazy">
+        </div>
+        <div class="hero-content">
+          <h2 class="hero-title" data-es="Mi Historia Personal" data-en="My Personal Story">My Personal Story</h2>
+          <p class="hero-description">
+            I was born in Colombia and, from a young age, I've been passionate about learning, growing, and finding purpose. My journey includes work, studies, service, and personal development, integrating each experience into my mission in life. Here, I share my values, key milestones, and how holistic growth drives my desire to help others.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- TIMELINE SECTION: Important milestones -->
+    <section class="timeline-section">
+      <h2 class="section-title" data-es="Hitos Importantes" data-en="Key Milestones">Key Milestones</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-date">2012</span>
+          <span class="timeline-desc">High school graduation and first job.</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2016</span>
+          <span class="timeline-desc">Missionary service in Chile, discovering social vocation.</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2018</span>
+          <span class="timeline-desc">Sales coordinator at AJE Colombia, developing leadership.</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2023</span>
+          <span class="timeline-desc">Started web development and programming studies.</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2025</span>
+          <span class="timeline-desc">Launched Augusto Dev blog, focusing on holistic growth.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES & MISSION SECTION: Grid cards for personal values -->
+    <section class="values-section highlights">
+      <h2 class="section-title" data-es="Valores y Misión" data-en="Values and Mission">Values and Mission</h2>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-icon">💡</div>
+          <h3>Continuous Learning</h3>
+          <p>Constant search for knowledge and self-improvement.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🤝</div>
+          <h3>Service</h3>
+          <p>Commitment to the well-being of my family and community.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🌎</div>
+          <h3>Positive Impact</h3>
+          <p>Create digital solutions to help others grow.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🏆</div>
+          <h3>Discipline</h3>
+          <p>Consistency in work, physical health, and personal goals.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOCUS AREAS SECTION: Cards with icons for each dimension -->
+    <section class="highlights">
+      <h2 class="section-title" data-es="Áreas de Enfoque" data-en="Focus Areas">Focus Areas</h2>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-icon">🎓</div>
+          <h3 data-es="Estudios" data-en="Studies">Studies</h3>
+          <p data-es="Formación profesional en desarrollo web y aprendizaje continuo." data-en="Professional training in web development and continuous learning.">Professional training in web development and continuous learning.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">💻</div>
+          <h3 data-es="Proyectos" data-en="Projects">Projects</h3>
+          <p data-es="Portafolio de proyectos web que demuestran habilidades técnicas." data-en="Portfolio of web projects showcasing technical skills.">Portfolio of web projects showcasing technical skills.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🙏</div>
+          <h3 data-es="Espíritu" data-en="Spirit">Spirit</h3>
+          <p data-es="Desarrollo espiritual y reflexión sobre propósito de vida." data-en="Spiritual development and reflection on life purpose.">Spiritual development and reflection on life purpose.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🏃‍♂️</div>
+          <h3 data-es="Salud Física" data-en="Physical Health">Physical Health</h3>
+          <p data-es="Compromiso con bienestar físico y hábitos saludables." data-en="Commitment to physical wellness and healthy habits.">Commitment to physical wellness and healthy habits.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">💰</div>
+          <h3 data-es="Finanzas" data-en="Finance">Finance</h3>
+          <p data-es="Educación financiera y construcción de estabilidad económica." data-en="Financial education and building economic stability.">Financial education and building economic stability.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🌱</div>
+          <h3 data-es="Social" data-en="Social">Social</h3>
+          <p data-es="Relaciones significativas, familia y servicio a la comunidad." data-en="Meaningful relationships, family, and community service.">Meaningful relationships, family, and community service.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOAL TRACKER SECTION: Connects mission to tracker functionality -->
+    <section class="cta-section">
+      <div class="cta-content">
+        <h2 data-es="¿Por qué trackeo mis metas?" data-en="Why do I track my goals?">Why do I track my goals?</h2>
+        <p>
+          Tracking my goals allows me to visualize my progress and be intentional in every area of my life. The Augusto Dev tracker connects my personal purpose with tools that encourage holistic growth, driving learning and daily action.
+        </p>
+        <a href="tracker.html" class="btn btn-primary" data-es="Ir al Tracker" data-en="Go to Tracker">Go to Tracker</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: Copy the exact footer code from index.html for consistency -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 data-es="Navegación" data-en="Navigation">Navigation</h3>
+        <ul>
+          <li><a href="index.html" data-es="Inicio" data-en="Home">Home</a></li>
+          <li><a href="about.html" data-es="Sobre mí" data-en="About">About</a></li>
+          <li><a href="projects.html" data-es="Proyectos" data-en="Projects">Projects</a></li>
+          <li><a href="contact.html" data-es="Contacto" data-en="Contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 data-es="Redes Sociales" data-en="Social Media">Social Media</h3>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 data-es="Legal" data-en="Legal">Legal</h3>
+        <ul>
+          <li><a href="references.html" data-es="Referencias" data-en="References">References</a></li>
+          <li><a href="#" data-es="Privacidad" data-en="Privacy">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p data-es="© 2025 Augusto Dev. Todos los derechos reservados." data-en="© 2025 Augusto Dev. All rights reserved.">© 2025 Augusto Dev. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- JS for theme/language toggling and main functions -->
+  <script src="js/main.js"></script>
+</body>
+</html>
