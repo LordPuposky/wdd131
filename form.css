@@ -1,0 +1,139 @@
+:root {
+  --col-yellow: #FFD600;
+  --col-blue: #0033A0;
+  --col-red: #EF3340;
+  --background: #FFFBE6;
+  --text: #222;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #FFF4A3 0%,
+    #FFF4A3 50%,
+    #A8C8EC 75%,
+    #F5A3A3 100%
+  );
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  max-width: 410px;
+  margin: 2em auto;
+  background: #fffbe6ea;
+  border-radius: 12px;
+  padding: 2em;
+  box-shadow: 0 0 18px #0033A088;
+  border: 3px solid var(--col-blue);
+}
+
+h1 {
+  text-align: center;
+  color: var(--col-blue);
+  background: var(--col-yellow);
+  padding: 0.5em;
+  border-radius: 8px;
+  border-bottom: 3px solid var(--col-red);
+  margin-bottom: 1em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  font-weight: bold;
+}
+
+form label, form legend {
+  display: block;
+  margin-top: 1em;
+}
+
+fieldset {
+  border: 2px solid var(--col-blue);
+  margin: 1em 0;
+  border-radius: 5px;
+  padding: 0.5em;
+  background: #e9f0ff;
+}
+
+input, select, textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: .5em;
+  margin-top: .5em;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  border: 1.5px solid var(--col-yellow);
+  font-size: 1em;
+  background: #FFFBE6;
+  color: var(--text);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: .4em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+input[type="submit"] {
+  background: var(--col-red);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+  font-size: 1.1em;
+  border-radius: 8px;
+  padding: 0.8em 0;
+  border-bottom: 2px solid var(--col-blue);
+  box-shadow: 0 2px 8px #3333A054;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background: var(--col-blue);
+  color: var(--col-yellow);
+  border-bottom: 2px solid var(--col-red);
+}
+
+footer {
+  background: linear-gradient(135deg, #4A7BC8 70%, #6B9BD2 100%);
+  color: #FFF4A3;
+  text-align: center;
+  padding: 2em 1em 1.3em 1em;
+  margin: 2em auto 2em auto;
+  font-weight: bold;
+  border-top: 4px solid var(--col-red);
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -4px 16px rgba(0,0,0,0.13);
+  border: 3px solid #6B9BD2;
+  max-width: 500px;
+}
+
+footer p {
+  margin: 12px 0;
+  letter-spacing: 0.5px;
+}
+
+.required-star {
+  color: var(--col-red);
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1em;
+    max-width: 98vw;
+  }
+  footer {
+    max-width: 94vw;
+    padding: 1.5em 0.5em 1em 0.5em;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+  }
+}
