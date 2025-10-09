@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank you for your review!</title>
+  <link rel="stylesheet" href="review.css">
+</head>
+<body>
+  <main>
+    <h1>Thank you for your review!</h1>
+    <p>Your review has been submitted successfully.</p>
+    <p>Total reviews you have submitted: <span id="reviewCount"></span></p>
+    <a href="form.html">Submit another review</a>
+  </main>
+  <footer>
+    <p>©2025 🎶 Yesid Augusto Romero Ruiz 🎶  Colombia 🇨🇴</p>
+    <p id="footer-date"></p>
+  </footer>
+  <script>
+    let count = localStorage.getItem('reviewCount') || 0;
+    count++;
+    localStorage.setItem('reviewCount', count);
+    document.getElementById('reviewCount').textContent = count;
+    document.getElementById('footer-date').textContent =
+      'Last Modification: ' + document.lastModified;
+  </script>
+</body>
+</html>
