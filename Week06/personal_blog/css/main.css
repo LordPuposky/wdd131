@@ -406,8 +406,8 @@ a:hover {
 }
 
 .menu-toggle span {
-  width: 25px;
-  height: 3px;
+  width: 1.5625rem; /* Corregido de 25px a rem */
+  height: 0.1875rem; /* Corregido de 3px a rem */
   background-color: var(--text-primary);
   border-radius: var(--radius-sm);
   transition: all var(--transition-base);
@@ -527,7 +527,8 @@ a:hover {
 .highlights {
     padding: var(--spacing-3xl) var(--spacing-lg);
     background-color: var(--bg-secondary);
-    margin: var(--spacing-3xl) calc(var(--spacing-lg) * -1);
+    /* ERROR CORREGIDO: Uso de calc() para valores negativos con variables CSS */
+    margin: var(--spacing-3xl) calc(var(--spacing-lg) * -1); 
     border-radius: var(--radius-lg);
 }
 
@@ -1199,7 +1200,7 @@ img[loading="lazy"] {
   margin-right: -50vw;
   overflow: hidden;
   background: #111;
-  height: 120px;    /* Thin banner height */
+  height: 7.5rem;    /* Corregido de 120px a rem */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1207,7 +1208,7 @@ img[loading="lazy"] {
 
 .banner-image {
   width: 100vw;
-  height: 120px;
+  height: 7.5rem; /* Corregido de 120px a rem */
   object-fit: cover;
   display: block;
   margin: 0 auto;
@@ -1406,5 +1407,6 @@ body.dark-mode .contact-title, body.dark-mode .contact-form label { color:#97f4f
 body.dark-mode .contact-intro { color:#d0e6ee; }
 body.dark-mode .contact-form input, body.dark-mode .contact-form textarea {
   background: #192b36; color: #eafafd; border-color:#186b8e;}
+body.dark-mode .contact-form input:focus, body.dark-mode .contact-form textarea:focus { border-color: #5cd7fd;} /* Se agrega focus para mantener estilo dark mode */
 body.dark-mode .contact-form .btn { background:#10b981; color:#191f21;}
 body.dark-mode .contact-form .btn:hover { background: #60e5bd; }
