@@ -439,7 +439,7 @@ a:hover {
 }
 
 .profile-image {
-  width: 1000%;
+  width: 100%;
   max-width: 400px;
   height: auto;
   border-radius: var(--radius-lg);

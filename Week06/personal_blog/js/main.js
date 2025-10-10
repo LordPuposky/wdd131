@@ -1,13 +1,14 @@
 let currentLanguage = localStorage.getItem('language') || 'en';
 let isDarkMode = localStorage.getItem('darkMode') === 'true';
 
+
 // ===== ARRAY PROJECTS =====
 const projectsData = [
   // FRONTEND
   {
-    status: "completed",
-    statusText: { es: "Completado", en: "Completed" },
-    image: "images/project-placeholder.avif",
+    status: "inprogress",
+    statusText: { es: "En Proceso", en: "In Progress" },
+    image: "images/Bank_UI_Components_Library.png",
     alt: "Bank UI Components Library",
     title: { es: "Biblioteca de Componentes UI Bancarios", en: "Bank UI Components Library" },
     githubUrl: "https://github.com/yourrepo/bank-ui-library",
@@ -19,13 +20,13 @@ const projectsData = [
     technologies: ["HTML5", "CSS3", "React"],
     challenge: { es: "Lograr accesibilidad y modularidad.", en: "Full accessibility and modularity." },
     value: { es: "Mejor UX y consistencia.", en: "Better UX and consistency." },
-    date: "August 2025",
+    date: "October 2025",
     demoUrl: "#"
   },
   {
-    status: "completed",
-    statusText: { es: "Completado", en: "Completed" },
-    image: "images/project-placeholder.avif",
+    status: "inprogress",
+    statusText: { es: "En Proceso", en: "In Progress" },
+    image: "./images/Responsive_dashboard.JPG",
     alt: "Responsive Dashboard",
     title: { es: "Dashboard Responsive", en: "Responsive Dashboard" },
     githubUrl: "https://github.com/yourrepo/responsive-dashboard",
@@ -37,15 +38,16 @@ const projectsData = [
     technologies: ["HTML5", "CSS3", "JavaScript"],
     challenge: { es: "Formulario adaptable y data charts.", en: "Adaptive layout and interactive charts." },
     value: { es: "UX ideal en cualquier dispositivo.", en: "Smooth UX on any device." },
-    date: "June 2025",
+    date: "November 2025",
     demoUrl: "#"
   },
 
+
   // BACKEND
   {
-    status: "inprogress",
+    sstatus: "inprogress",
     statusText: { es: "En Proceso", en: "In Progress" },
-    image: "images/project-placeholder.avif",
+    image: "images/Simple_Banking_API.png",
     alt: "Simple Banking API",
     title: { es: "API Bancaria Simple", en: "Simple Banking API" },
     githubUrl: "https://github.com/yourrepo/simple-banking-api",
@@ -57,13 +59,13 @@ const projectsData = [
     technologies: ["Python", "Flask", "Node.js"],
     challenge: { es: "Diseñar endpoints seguros.", en: "Design secure endpoints." },
     value: { es: "API real para práctica fintech.", en: "Real-world API for fintech practice." },
-    date: "July 2025",
+    date: "December 2025",
     demoUrl: null
   },
   {
-    status: "completed",
-    statusText: { es: "Completado", en: "Completed" },
-    image: "images/project-placeholder.avif",
+    status: "inprogress",
+    statusText: { es: "En Proceso", en: "In Progress" },
+    image: "images/notifications_microservice.png",
     alt: "Notifications Microservice",
     title: { es: "Microservicio de Notificaciones", en: "Notifications Microservice" },
     githubUrl: "https://github.com/yourrepo/notifications-microservice",
@@ -75,15 +77,16 @@ const projectsData = [
     technologies: ["Python", "Flask", "Celery"],
     challenge: { es: "Integrar servicios externos.", en: "Integrate cloud/external services." },
     value: { es: "Automatización y alertas.", en: "Automation and real-time alerts." },
-    date: "July 2025",
+    date: "January 2026",
     demoUrl: null
   },
 
+
   // FULL STACK
   {
-    status: "completed",
-    statusText: { es: "Completado", en: "Completed" },
-    image: "images/project-placeholder.avif",
+    status: "inprogress",
+    statusText: { es: "En Proceso", en: "In Progress" },
+    image: "images/Personal_Finance_Tracker.png",
     alt: "Personal Finance Tracker",
     title: { es: "Tracker de Finanzas Personales", en: "Personal Finance Tracker" },
     githubUrl: "https://github.com/yourrepo/finance-tracker",
@@ -95,13 +98,13 @@ const projectsData = [
     technologies: ["React", "Python", "PostgreSQL"],
     challenge: { es: "Sincronizar backend y frontend.", en: "Sync backend & frontend for real-time." },
     value: { es: "Presupuestos dinámicos.", en: "Dynamic budgeting and analytics." },
-    date: "September 2025",
+    date: "February 2026",
     demoUrl: "#"
   },
   {
-    status: "completed",
-    statusText: { es: "Completado", en: "Completed" },
-    image: "images/project-placeholder.avif",
+    status: "inprogress",
+    statusText: { es: "En Proceso", en: "In Progress" },
+    image: "images/Simple_Bank_Portal.png",
     alt: "Simple Bank Portal",
     title: { es: "Portal de Banca Simple", en: "Simple Bank Portal" },
     githubUrl: "https://github.com/yourrepo/simple-bank-portal",
@@ -113,15 +116,16 @@ const projectsData = [
     technologies: ["Node.js", "MongoDB", "React"],
     challenge: { es: "Conexión UI-backend.", en: "UI-backend connection, authentication." },
     value: { es: "Aprendizaje completo fullstack.", en: "Fullstack learning for real-world apps." },
-    date: "August 2025",
+    date: "March 2026",
     demoUrl: "#"
   },
 
+
   // CLOUD / DATABASE
   {
-    status: "completed",
-    statusText: { es: "Completado", en: "Completed" },
-    image: "images/project-placeholder.avif",
+    status: "inprogress",
+    statusText: { es: "En Proceso", en: "In Progress" },
+    image: "images/Banking_Database_Schema_Design.webp",
     alt: "Banking Database Schema",
     title: { es: "Diseño de Esquema Bancario", en: "Banking Database Schema Design" },
     githubUrl: "https://github.com/yourrepo/db-schema-design",
@@ -133,13 +137,13 @@ const projectsData = [
     technologies: ["PostgreSQL", "MySQL"],
     challenge: { es: "Modelar relaciones complejas.", en: "Model complex relations and constraints." },
     value: { es: "Integridad y seguridad.", en: "Data integrity and security." },
-    date: "October 2025",
+    date: "April 2026",
     demoUrl: null
   },
   {
-    status: "completed",
-    statusText: { es: "Completado", en: "Completed" },
-    image: "images/project-placeholder.avif",
+    status: "inprogress",
+    statusText: { es: "En Proceso", en: "In Progress" },
+    image: "images/cloud_deployment_demo.webp",
     alt: "Cloud Deployment Demo",
     title: { es: "Demo de Cloud Deployment", en: "Cloud Deployment Demo" },
     githubUrl: "https://github.com/yourrepo/cloud-deployment-demo",
@@ -151,10 +155,11 @@ const projectsData = [
     technologies: ["Docker", "GitHub Actions", "AWS"],
     challenge: { es: "Automatización CI/CD.", en: "CI/CD automation, containers." },
     value: { es: "Preparación para trabajo real en la nube.", en: "Readiness for real-world cloud jobs." },
-    date: "October 2025",
+    date: "May 2026",
     demoUrl: null
   }
 ];
+
 
 // DEVICON SVG MAPPING
 const deviconSVG = {
@@ -174,11 +179,12 @@ const deviconSVG = {
   'AWS':'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original.svg'
 };
 
-// tHEME DARK/LIGHT
+
+// THEME DARK/LIGHT
 function initializeTheme() {
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   isDarkMode = localStorage.getItem('darkMode') === 'true' ||
-               (localStorage.getItem('darkMode') === null && prefersDark);
+              (localStorage.getItem('darkMode') === null && prefersDark);
   applyTheme(isDarkMode);
 }
 function applyTheme(dark) {
@@ -193,6 +199,7 @@ function applyTheme(dark) {
     localStorage.setItem('darkMode', 'false');
   }
 }
+
 
 // LANGUAGE
 function initializeLanguage() {
@@ -217,6 +224,7 @@ function updateLanguageDisplay() {
   }
 }
 
+
 // EVENT LISTENERS
 function setupEventListeners() {
   document.getElementById('themeToggle')?.addEventListener('click', () => {
@@ -228,6 +236,7 @@ function setupEventListeners() {
   });
 }
 
+
 // BADGES
 function createTechBadges(technologies) {
   return [...new Set(technologies)].map(tech => `
@@ -238,35 +247,63 @@ function createTechBadges(technologies) {
   `).join('');
 }
 
-// RENDER PROJECTS
+
+// RENDER PROJECTS - VERSIÓN ACTUALIZADA ANTI-404
 function createProjectCard(project) {
   const lang = currentLanguage;
   const statusClass = project.status === 'completed' ? 'completed' : 'inprogress';
+
+  // --- LÓGICA DE BOTONES ANTI-404 ---
+  
+  // 1. Lógica para el botón 'View Code' (Ver Código)
+  // Deshabilita si la URL contiene "yourrepo", es null, o es solo "#".
+  const isCodeAvailable = project.githubUrl && project.githubUrl !== '#' && !project.githubUrl.includes("yourrepo");
+  const codeButtonText = lang === 'es' ? 'Ver Código' : 'View Code';
+  const codeButtonDisabledText = lang === 'es' ? 'Código no disponible' : 'Code Not Available';
+
+  const codeButtonHtml = isCodeAvailable
+      ? `<a href="${project.githubUrl}" target="_blank" rel="noopener" class="btn btn-secondary">${codeButtonText}</a>`
+      : `<button disabled class="btn btn-secondary btn-disabled" title="${codeButtonDisabledText}">${codeButtonDisabledText}</button>`;
+
+  // 2. Lógica para el botón 'Try Demo' (Ver Demo)
+  // Deshabilita si la URL es null o "#".
+  const isDemoAvailable = project.demoUrl && project.demoUrl !== '#';
+  const demoButtonText = lang === 'es' ? 'Ver Demo' : 'Try Demo';
+  const demoButtonDisabledText = lang === 'es' ? 'En Desarrollo' : 'In Development';
+
+  const demoButtonHtml = isDemoAvailable
+      ? `<a href="${project.demoUrl}" target="_blank" rel="noopener" class="btn btn-secondary">${demoButtonText}</a>`
+      : `<button disabled class="btn btn-secondary btn-disabled" title="${demoButtonDisabledText}">${demoButtonDisabledText}</button>`;
+  
+  // --- FIN LÓGICA DE BOTONES ---
+
   return `
     <div class="project-card">
       <span class="project-status ${statusClass}">${project.statusText[lang]}</span>
       <div class="project-card-grid">
         <div class="project-image"><img src="${project.image}" alt="${project.alt}" loading="lazy"></div>
         <div class="project-info">
-          <h3 class="project-title"><a href="${project.githubUrl}" target="_blank" rel="noopener">${project.title[lang]}</a></h3>
+          <h3 class="project-title">${project.title[lang]}</h3>
           <p class="project-description">${project.description[lang]}<br><em>Purpose:</em> ${project.purpose[lang]}</p>
           <div class="project-tech">${createTechBadges(project.technologies)}</div>
           <div class="project-challenge"><strong>Main Challenge:</strong> ${project.challenge[lang]}</div>
           <div class="project-value"><strong>Value Added:</strong> ${project.value[lang]}</div>
           <div class="project-date"><strong>Date:</strong> ${project.date}</div>
           <div class="project-actions">
-            <a href="${project.githubUrl}" target="_blank" class="btn btn-secondary">View Code</a>
-            ${project.demoUrl ? `<a href="${project.demoUrl}" target="_blank" class="btn btn-secondary">Try Demo</a>` : ""}
+            ${codeButtonHtml}
+            ${demoButtonHtml}
           </div>
         </div>
       </div>
     </div>`;
 }
+
 function renderProjects() {
   const container = document.getElementById('projects-container');
   if (!container) return;
   container.innerHTML = projectsData.map(createProjectCard).join('');
 }
+
 
 // INITIALIZE
 document.addEventListener('DOMContentLoaded', function () {
@@ -276,6 +313,7 @@ document.addEventListener('DOMContentLoaded', function () {
   renderProjects();
 });
 document.addEventListener('languageChanged', renderProjects);
+
 
 // ===== CONTACT FORM HANDLING, VALIDATION & SUCCESS ANIMATION =====
 function initContactForm() {
@@ -308,7 +346,7 @@ function initContactForm() {
     }
 
     // Store name in localStorage for greeting
-    try { 
+    try {
       localStorage.setItem('lastContactName', nameInput.value.trim());
     } catch (_) { }
 
