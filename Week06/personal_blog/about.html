@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Story | Augusto Dev</title>
-  <meta name="description" content="Personal story, values, and mission of Augusto Dev">
-  <!-- Main project styles -->
+  <title>About | Augusto Dev</title>
+  <meta name="description" content="Personal story, values, milestones and growth of Yesid Augusto Romero Ruiz.">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-  <!-- HEADER: Copy the exact header code from index.html to keep consistency -->
+  <!-- ===== HEADER ===== -->
   <header class="header">
     <div class="header-container">
       <div class="logo-section">
@@ -27,175 +25,252 @@
         </ul>
       </nav>
       <div class="header-controls">
-        <!-- Theme switch button (dark/light) -->
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Change theme">
-          <span class="theme-icon"></span>
-        </button>
-        <!-- Language switch button (English/Spanish) -->
-        <button class="lang-toggle" id="langToggle" aria-label="Toggle language" title="Change language">
-          <span class="lang-text">EN</span>
-        </button>
-        <!-- Mobile menu button -->
-        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Change theme"><span class="theme-icon">🌙</span></button>
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language" title="Change language"><span class="lang-text">EN</span></button>
       </div>
     </div>
   </header>
 
+  <!-- ===== BANNER IMAGE (same as projects) ===== -->
+  <div class="banner-image-wrapper">
+    <img src="images/project-placeholder.avif" alt="Banner" class="banner-image">
+  </div>
+
+  <!-- ===== ABOUT MAIN CONTENT ===== -->
   <main class="main-content">
-    <!-- HERO SECTION: Black & white profile photo and brief introduction -->
-    <section class="hero about-hero">
-      <div class="hero-container">
-        <div class="hero-image">
-          <!-- Replace this image with your real photo (keep file name or update path as needed) -->
-          <img src="images/your-bnw-photo.jpg" alt="Augusto Dev Profile Photo" class="profile-image loading-lazy">
-        </div>
-        <div class="hero-content">
-          <h2 class="hero-title" data-es="Mi Historia Personal" data-en="My Personal Story">My Personal Story</h2>
-          <p class="hero-description">
-            I was born in Colombia and, from a young age, I've been passionate about learning, growing, and finding purpose. My journey includes work, studies, service, and personal development, integrating each experience into my mission in life. Here, I share my values, key milestones, and how holistic growth drives my desire to help others.
-          </p>
-        </div>
-      </div>
-    </section>
-    
-    <!-- TIMELINE SECTION: Important milestones -->
-    <section class="timeline-section">
-      <h2 class="section-title" data-es="Hitos Importantes" data-en="Key Milestones">Key Milestones</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <span class="timeline-date">2012</span>
-          <span class="timeline-desc">High school graduation and first job.</span>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-date">2016</span>
-          <span class="timeline-desc">Missionary service in Chile, discovering social vocation.</span>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-date">2018</span>
-          <span class="timeline-desc">Sales coordinator at AJE Colombia, developing leadership.</span>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-date">2023</span>
-          <span class="timeline-desc">Started web development and programming studies.</span>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-date">2025</span>
-          <span class="timeline-desc">Launched Augusto Dev blog, focusing on holistic growth.</span>
-        </div>
-      </div>
-    </section>
+    <section class="about-block">
 
-    <!-- VALUES & MISSION SECTION: Grid cards for personal values -->
-    <section class="values-section highlights">
-      <h2 class="section-title" data-es="Valores y Misión" data-en="Values and Mission">Values and Mission</h2>
-      <div class="highlights-grid">
-        <div class="highlight-card">
-          <div class="highlight-icon">💡</div>
-          <h3>Continuous Learning</h3>
-          <p>Constant search for knowledge and self-improvement.</p>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">🤝</div>
-          <h3>Service</h3>
-          <p>Commitment to the well-being of my family and community.</p>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">🌎</div>
-          <h3>Positive Impact</h3>
-          <p>Create digital solutions to help others grow.</p>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">🏆</div>
-          <h3>Discipline</h3>
-          <p>Consistency in work, physical health, and personal goals.</p>
-        </div>
+      <!-- ===== PERSONAL PHOTO ===== -->
+      <div class="about-photo">
+        <img src="images/familia.jpg" alt="Family Photo" class="profile-image">
       </div>
-    </section>
-
-    <!-- FOCUS AREAS SECTION: Cards with icons for each dimension -->
-    <section class="highlights">
-      <h2 class="section-title" data-es="Áreas de Enfoque" data-en="Focus Areas">Focus Areas</h2>
-      <div class="highlights-grid">
-        <div class="highlight-card">
-          <div class="highlight-icon">🎓</div>
-          <h3 data-es="Estudios" data-en="Studies">Studies</h3>
-          <p data-es="Formación profesional en desarrollo web y aprendizaje continuo." data-en="Professional training in web development and continuous learning.">Professional training in web development and continuous learning.</p>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">💻</div>
-          <h3 data-es="Proyectos" data-en="Projects">Projects</h3>
-          <p data-es="Portafolio de proyectos web que demuestran habilidades técnicas." data-en="Portfolio of web projects showcasing technical skills.">Portfolio of web projects showcasing technical skills.</p>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">🙏</div>
-          <h3 data-es="Espíritu" data-en="Spirit">Spirit</h3>
-          <p data-es="Desarrollo espiritual y reflexión sobre propósito de vida." data-en="Spiritual development and reflection on life purpose.">Spiritual development and reflection on life purpose.</p>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">🏃‍♂️</div>
-          <h3 data-es="Salud Física" data-en="Physical Health">Physical Health</h3>
-          <p data-es="Compromiso con bienestar físico y hábitos saludables." data-en="Commitment to physical wellness and healthy habits.">Commitment to physical wellness and healthy habits.</p>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">💰</div>
-          <h3 data-es="Finanzas" data-en="Finance">Finance</h3>
-          <p data-es="Educación financiera y construcción de estabilidad económica." data-en="Financial education and building economic stability.">Financial education and building economic stability.</p>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">🌱</div>
-          <h3 data-es="Social" data-en="Social">Social</h3>
-          <p data-es="Relaciones significativas, familia y servicio a la comunidad." data-en="Meaningful relationships, family, and community service.">Meaningful relationships, family, and community service.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- GOAL TRACKER SECTION: Connects mission to tracker functionality -->
-    <section class="cta-section">
-      <div class="cta-content">
-        <h2 data-es="¿Por qué trackeo mis metas?" data-en="Why do I track my goals?">Why do I track my goals?</h2>
-        <p>
-          Tracking my goals allows me to visualize my progress and be intentional in every area of my life. The Augusto Dev tracker connects my personal purpose with tools that encourage holistic growth, driving learning and daily action.
+      
+      <!-- ===== MAIN TITLE BILINGUAL ===== -->
+      <h2 class="about-title" data-es="Mi Historia Personal" data-en="My Personal Story">My Personal Story</h2>
+      
+      <!-- ===== PERSONAL QUOTE ===== -->
+      <blockquote class="about-quote"
+        data-en="You become what you pay attention to. - Epictetus. Where are your thoughts focused today?"
+        data-es="Te conviertes en aquello a lo que le prestas atención. Epicteto. ¿Dónde están enfocados tus pensamientos hoy?">
+        You become what you pay attention to. - Epictetus. Where are your thoughts focused today?
+      </blockquote>
+      
+      <!-- ===== INTRODUCTION PARAGRAPH ===== -->
+      <section class="about-section">
+        <h3 class="about-section-title" data-es="Introducción" data-en="Introduction">Introduction</h3>
+        <p data-en="I am from Colombia, born in a beautiful town in Cundinamarca called Cahipay. What inspires me is the desire to change and become better every day. I see myself as a child of God with a divine potential to achieve what I set my mind to—honest, responsible, and persistent."
+           data-es="Soy de Colombia, de un bello pueblo de Cundinamarca llamado Cahipay. Me inspira el deseo de cambiar y mejorar cada día. Me defino como un hijo de Dios con potencial divino para lograr lo que me proponga, íntegro, honesto, responsable y constante.">
+          I am from Colombia, born in a beautiful town in Cundinamarca called Cahipay. What inspires me is the desire to change and become better every day. I see myself as a child of God with a divine potential to achieve what I set my mind to—honest, responsible, and persistent.
         </p>
-        <a href="tracker.html" class="btn btn-primary" data-es="Ir al Tracker" data-en="Go to Tracker">Go to Tracker</a>
-      </div>
+      </section>
+      
+      <!-- ===== KEY MILESTONES ===== -->
+      <section class="about-section">
+        <h3 class="about-section-title" data-es="Hitos Clave" data-en="Key Milestones">Key Milestones</h3>
+        <ul class="about-milestones">
+          <li data-en="1999: Mission in Chile (Antofagasta), Church of Jesus Christ of Latter-day Saints" data-es="1999: Misión Chile Antofagasta, Iglesia de Jesucristo de los Santos de los Últimos Días">1999: Mission in Chile (Antofagasta), Church of Jesus Christ of Latter-day Saints</li>
+          <li data-en="2002: Purchased my home" data-es="2002: Compro mi vivienda">2002: Purchased my home</li>
+          <li data-en="2004: Civil marriage" data-es="2004: Matrimonio civil">2004: Civil marriage</li>
+          <li data-en="2005: Birth of my first daughter, Ana Sofia Romero" data-es="2005: Nace mi primera hija Ana Sofía Romero">2005: Birth of my first daughter, Ana Sofia Romero</li>
+          <li data-en="2009: Birth of my son, Andres Felipe" data-es="2009: Nace mi segundo hijo Andrés Felipe">2009: Birth of my son, Andres Felipe</li>
+          <li data-en="2011: Birth of my third daughter, Sara Alejandra" data-es="2011: Nace mi tercera hija Sara Alejandra">2011: Birth of my third daughter, Sara Alejandra</li>
+          <li data-en="2014: Graduated in Business Administration (Politécnico Grancolombiano)" data-es="2014: Me graduo como Administrador de Empresas (Politécnico Grancolombiano)">2014: Graduated in Business Administration (Politécnico Grancolombiano)</li>
+          <li data-en="2010-2018: Leadership roles in the consumer goods sector" data-es="2010-2018: Trabajo en cargos de liderazgo en el sector de consumo masivo">2010-2018: Leadership roles in the consumer goods sector</li>
+        </ul>
+      </section>
+      
+      <!-- ===== INTERESTS AND PASSIONS ===== -->
+      <section class="about-section">
+        <h3 class="about-section-title" data-es="Intereses y Pasiones" data-en="Interests and Passions">Interests and Passions</h3>
+        <p data-en="Technology, software development, artificial intelligence. Sports: football, gym workouts. Music: favorite band Bon Jovi."
+           data-es="Tecnología, desarrollo e inteligencia artificial. Deportes: fútbol y trabajo en el gimnasio. Música: banda favorita Bon Jovi.">
+           Technology, software development, artificial intelligence. Sports: football, gym workouts. Music: favorite band Bon Jovi.
+        </p>
+      </section>
+      
+      <!-- ===== VALUES AND VISION ===== -->
+      <section class="about-section">
+        <h3 class="about-section-title" data-es="Valores y Visión" data-en="Values and Vision">Values and Vision</h3>
+
+        <h4 data-en="Personal Growth Values" data-es="Valores Personales de Crecimiento">Personal Growth Values</h4>
+        <ul>
+          <li data-en="Discipline: reading and study habits." data-es="Disciplina: hábitos de lectura y estudio.">Discipline: reading and study habits.</li>
+          <li data-en="Personal progress: clear vision even through career changes." data-es="Superación personal: visión clara de progreso incluso tras cambios de rumbo profesional.">Personal progress: clear vision even through career changes.</li>
+          <li data-en="Lifelong learning: formal and informal education, philosophy." data-es="Aprendizaje continuo: valoras la educación formal e informal, desde CS50 a filosofía.">Lifelong learning: formal and informal education, philosophy.</li>
+          <li data-en="Self-reflection: understanding my emotions and beliefs." data-es="Reflexión y autoconocimiento: entender emociones, decisiones y creencias.">Self-reflection: understanding my emotions and beliefs.</li>
+          <li data-en="Resilience: reinventing myself more than once." data-es="Resiliencia: me he reinventado más de una vez.">Resilience: reinventing myself more than once.</li>
+        </ul>
+        <h4 data-en="Professional Values" data-es="Valores Profesionales">Professional Values</h4>
+        <ul>
+          <li data-en="Responsibility: high standards at work and in school." data-es="Responsabilidad: desempeño laboral y académico serio.">Responsibility: high standards at work and in school.</li>
+          <li data-en="Technical curiosity: always learning new tools and languages." data-es="Curiosidad técnica: exploro nuevas herramientas y lenguajes.">Technical curiosity: always learning new tools and languages.</li>
+          <li data-en="Sustained effort: progress step by step, never giving up." data-es="Esfuerzo sostenido: prefiero avanzar poco a poco antes que rendirme.">Sustained effort: progress step by step, never giving up.</li>
+          <li data-en="Adaptability: from sales to web development and customer service in English." data-es="Adaptabilidad: he pasado de ventas a desarrollo web y servicio al cliente.">Adaptability: from sales to web development and customer service in English.</li>
+          <li data-en="Balanced ambition: seeking both financial stability and purpose." data-es="Ambición equilibrada: busco estabilidad económica y propósito.">Balanced ambition: seeking both financial stability and purpose.</li>
+        </ul>
+        <h4 data-en="Spiritual and Community Values" data-es="Valores Espirituales y Comunitarios">Spiritual and Community Values</h4>
+        <ul>
+          <li data-en="Faith: central axis, belonging to the Church of Jesus Christ of Latter-day Saints." data-es="Fe: eje central, pertenencia a la Iglesia de Jesucristo de los Santos de los Últimos Días.">Faith: central axis, belonging to the Church of Jesus Christ of Latter-day Saints.</li>
+          <li data-en="Service: active in community projects and interfaith collaboration." data-es="Servicio: activo en proyectos comunitarios y colaboración interreligiosa.">Service: active in community projects and interfaith collaboration.</li>
+          <li data-en="Humility: learning from mistakes, never losing hope." data-es="Humildad: reconozco errores y no pierdo la esperanza.">Humility: learning from mistakes, never losing hope.</li>
+          <li data-en="Gratitude: appreciating what I have and those who accompany me." data-es="Gratitud: valoro lo que tengo y a quienes me acompañan.">Gratitude: appreciating what I have and those who accompany me.</li>
+          <li data-en="Love for others: evident from how I talk about my family, community, and colleagues." data-es="Amor al prójimo: se nota en la manera de hablar de familia, comunidad y compañeros.">Love for others: evident from how I talk about my family, community, and colleagues.</li>
+        </ul>
+        <h4 data-en="Intellectual and Philosophical Values" data-es="Valores Intelectuales y Filosóficos">Intellectual and Philosophical Values</h4>
+        <ul>
+          <li data-en="Practical wisdom (Stoicism): calm and emotional control, not perfection." data-es="Sabiduría práctica (estoicismo): serenidad, control emocional, no perfección.">Practical wisdom (Stoicism): calm and emotional control, not perfection.</li>
+          <li data-en="Critical thinking: questioning, understanding, and reflecting." data-es="Razonamiento crítico: cuestionar, entender, reflexionar.">Critical thinking: questioning, understanding, and reflecting.</li>
+          <li data-en="Coherence: aligning beliefs, words, and actions." data-es="Coherencia: procuro alinear creencias, palabras y acciones.">Coherence: aligning beliefs, words, and actions.</li>
+          <li data-en="Integrity: acting on my principles even if it’s harder." data-es="Integridad: actúo según mis principios aunque sea más difícil.">Integrity: acting on my principles even if it’s harder.</li>
+          <li data-en="Realistic hope: trusting the future, but not naively." data-es="Esperanza realista: confío en el futuro sin ingenuidad.">Realistic hope: trusting the future, but not naively.</li>
+        </ul>
+      </section>
+
+      <!-- ===== TRANSCENDENCE AND INTEGRATION ===== -->
+      <section class="about-section">
+        <h3 class="about-section-title" data-en="Transcendence and Motivation" data-es="Trascendencia y Motivación">Transcendence and Motivation</h3>
+        <h4 data-en="Desire to redeem my own story" data-es="Deseo de redimir mi propia historia">Desire to redeem my own story</h4>
+        <p data-en="There were times I felt I did not give my best—whether on my mission or in moments of self-doubt—but far from staying stuck, those experiences became fuel. My drive to transcend is about proving (to God and myself) that pain or insecurity can be turned into purpose and service. I don’t seek fame or recognition, but reconciliation with my best self."
+           data-es="He pasado por etapas donde sentí que no di todo lo que podía (en la misión, o con dudas personales), pero en vez de quedarme ahí, eso se volvió combustible. Mi deseo de trascender nace de demostrar (a Dios y a mí) que el dolor o la inseguridad pueden transformarse en propósito y servicio. No busco fama ni reconocimiento, sino reconciliación con mi mejor versión.">
+           There were times I felt I did not give my best—whether on my mission or in moments of self-doubt—but far from staying stuck, those experiences became fuel. My drive to transcend is about proving (to God and myself) that pain or insecurity can be turned into purpose and service. I don’t seek fame or recognition, but reconciliation with my best self.
+        </p>
+        <h4 data-en="Faith in a divine purpose" data-es="Fe en un propósito divino">Faith in a divine purpose</h4>
+        <p data-en="My spirituality guides my decisions. Transcendence is not just material success, but living so my life serves others. This shows in my community service, my speeches, and in my combination of learning and faith. I want to leave a legacy that combines God, knowledge, and service."
+           data-es="Mi espiritualidad guía mis decisiones. Trascender no es solo éxito material, sino vivir de modo que mi vida sirva a otros. Eso se ve en mi servicio comunitario, mis discursos y cómo combino aprendizaje y fe. Quiero dejar un legado que mezcle a Dios, conocimiento y servicio.">
+          My spirituality guides my decisions. Transcendence is not just material success, but living so my life serves others. This shows in my community service, my speeches, and in my combination of learning and faith. I want to leave a legacy that combines God, knowledge, and service.
+        </p>
+        <h4 data-en="Growth and legacy" data-es="Crecimiento y legado">Growth and legacy</h4>
+        <p data-en="My life is about learning, improving, teaching, inspiring. I pursue lasting impact: not just programming or working, but creating something that speaks for me even when I’m not present. Transcending means evolving without betraying my values."
+           data-es="Mi vida es aprendizaje, mejorar, enseñar, inspirar. Busco un impacto duradero: no solo programar o trabajar bien, sino crear algo que hable por mí incluso cuando no esté presente. Trascender es evolucionar sin traicionar mis valores.">
+          My life is about learning, improving, teaching, inspiring. I pursue lasting impact: not just programming or working, but creating something that speaks for me even when I’m not present. Transcending means evolving without betraying my values.
+        </p>
+        <h4 data-en="Love for conscious change" data-es="Amor por el cambio consciente">Love for conscious change</h4>
+        <p data-en="I distinguish myself by refusing to settle. Every time I feel limited, I seek to learn, change direction, or raise my thinking. My motivation is inner freedom—the chance to own my destiny, aligned with eternal principles."
+          data-es="Me distingo porque no me resigno. Cada vez que me siento limitado, busco aprender nuevas habilidades, cambiar de rumbo o elevar mi pensamiento. Me motiva la libertad interior: poder ser dueño de mi destino, alineado con principios eternos.">
+          I distinguish myself by refusing to settle. Every time I feel limited, I seek to learn, change direction, or raise my thinking. My motivation is inner freedom—the chance to own my destiny, aligned with eternal principles.
+        </p>
+        <h4 data-en="Inspire others by example" data-es="Inspirar a otros con el ejemplo">Inspire others by example</h4>
+        <p data-en="My story can inspire. Through service, study, and discipline, I convey the message that it’s never too late to start again—with faith, humility, and hard work."
+           data-es="Mi historia puede inspirar. Por medio del servicio, el estudio y la disciplina transmito el mensaje de que nunca es tarde para empezar de nuevo con fe, humildad y trabajo real.">
+           My story can inspire. Through service, study, and discipline, I convey the message that it’s never too late to start again—with faith, humility, and hard work.
+        </p>
+        <h4 data-en="Summary" data-es="En pocas palabras">Summary</h4>
+        <p data-en="My motivation is to transcend because I know I was called not only to improve my life, but to help others rise."
+           data-es="Me motiva trascender porque sé que fui llamado no solo a mejorar mi vida, sino a ayudar a otros a elevar la suya.">
+           My motivation is to transcend because I know I was called not only to improve my life, but to help others rise.
+        </p>
+      </section>
+
+      <!-- ===== PERSONAL REFLECTION AND IMPACT ===== -->
+      <section class="about-section">
+        <h3 class="about-section-title" data-en="Final Reflection" data-es="Reflexión final">Final Reflection</h3>
+        <p data-en="I have learned that personal and professional growth are not separate paths—they are two ways of a single inner transformation. For years I thought professional advancement was only about acquiring more skills or finding a better job. In reality, every technical step I’ve taken—learning programming, improving my English, studying new technologies—has been accompanied by a deeper process: believing in myself and strengthening my character. Now I know I can’t truly develop professionally without first working on my mindset, discipline, and faith. My personal growth has taught me to be steady, patient, and resilient; qualities that directly shape my work as a developer and as a person of service. Every line of code, every project, every client interaction is also an opportunity to practice humility, excellence, and commitment. The impact I want to create is not measured just in products or projects, but in how I inspire others to believe it’s always possible to start again. I want my life to show that technology can serve, elevate, and connect people—and that true success comes when what you do helps others grow too. My goal is to keep integrating the spiritual with the technical, the human with the professional. In the end, to transcend is not about having more, but being more useful to others."
+           data-es="He aprendido que el crecimiento personal y profesional no son caminos separados, sino dos formas distintas de una misma transformación interior. Por años pensé que avanzar profesionalmente era solo cuestión de adquirir habilidades o encontrar un mejor trabajo. Pero cada paso técnico —aprender programación, mejorar mi inglés, estudiar nuevas tecnologías— ha ido acompañado de un proceso más profundo: creer en mí mismo y fortalecer mi carácter. Ahora entiendo que no puedo crecer profesionalmente sin antes trabajar mi mentalidad, mi disciplina y mi fe. El crecimiento personal me ha enseñado a ser constante, paciente y resiliente; cualidades que se reflejan en mi labor como desarrollador y persona de servicio. Cada línea de código, cada proyecto o interacción es una oportunidad para practicar humildad, excelencia y compromiso. El impacto que busco no se mide solo en productos, sino en cómo inspiro a otros a creer que siempre se puede comenzar de nuevo. Quiero que mi vida demuestre que la tecnología puede servir, elevar y conectar personas, y que el verdadero éxito llega cuando lo que haces ayuda a otros a crecer. Mi meta es seguir integrando lo espiritual con lo técnico, lo humano con lo profesional. Porque al final, trascender no es tener más, sino ser más útil a los demás.">
+          I have learned that personal and professional growth are not separate paths—they are two ways of a single inner transformation...
+        </p>
+      </section>
+      
+      <!-- ===== SKILLS (TECHNICAL & HUMAN) ===== -->
+      <section class="about-section">
+        <h3 class="about-section-title" data-en="Skills" data-es="Skills">Skills</h3>
+        <h4 data-en="Hard Skills" data-es="Hard Skills">Hard Skills</h4>
+        <ul>
+          <li data-en="Frontend Development: HTML5, CSS3, JavaScript (DOM, functions, objects, validations)" data-es="Desarrollo Web Frontend: HTML5, CSS3, JavaScript (DOM, funciones, objetos, validaciones)">Frontend Development: HTML5, CSS3, JavaScript (DOM, functions, objects, validations)</li>
+          <li data-en="Frameworks & Libraries: Bootstrap, React (learning)" data-es="Frameworks y Librerías: Bootstrap, React (aprendizaje)">Frameworks & Libraries: Bootstrap, React (learning)</li>
+          <li data-en="Version Control: Git and GitHub" data-es="Gestión de versiones: Git y GitHub">Version Control: Git and GitHub</li>
+          <li data-en="Web Design: site structure, wireframes, Canva use" data-es="Diseño web: estructura de sitios, wireframes, uso de Canva">Web Design: site structure, wireframes, Canva use</li>
+          <li data-en="Databases: MySQL fundamentals (modeling and queries)" data-es="Bases de datos: fundamentos de MySQL (modelado y queries)">Databases: MySQL fundamentals (modeling and queries)</li>
+          <li data-en="Best Practices: comments, semantic structure, responsive design" data-es="Buenas prácticas: uso de comentarios, estructura semántica y diseño responsive">Best Practices: comments, semantic structure, responsive design</li>
+          <li data-en="Digital Tools: Excel, Google Workspace, VS Code" data-es="Ofimática y herramientas digitales: Excel, Google Workspace, Visual Studio Code">Digital Tools: Excel, Google Workspace, VS Code</li>
+          <li data-en="Languages: Intermediate English (call center work experience)" data-es="Idiomas: Inglés intermedio conversacional (experiencia laboral en call center)">Languages: Intermediate English (call center work experience)</li>
+        </ul>
+        <h4 data-en="Soft Skills" data-es="Soft Skills">Soft Skills</h4>
+        <ul>
+          <li data-en="Discipline and persistence: solid habits and continuous learning" data-es="Disciplina y constancia: hábitos sólidos y aprendizaje continuo">Discipline and persistence: solid habits and continuous learning</li>
+          <li data-en="Effective communication: customer service in English, leadership in sales" data-es="Comunicación efectiva: servicio al cliente en inglés y liderazgo en ventas">Effective communication: customer service in English, leadership in sales</li>
+          <li data-en="Empathy and service: work in church/community leadership and interacting with others" data-es="Empatía y servicio: labor comunitaria eclesiástica y trato con personas">Empathy and service: work in church/community leadership and interacting with others</li>
+          <li data-en="Resilience: reinventing and moving ahead in face of personal/professional challenges" data-es="Resiliencia: capacidad de reinventarme y avanzar ante desafíos">Resilience: reinventing and moving ahead in face of personal/professional challenges</li>
+          <li data-en="Collaborative leadership: coordinating activities and joint projects" data-es="Liderazgo colaborativo: coordinación de actividades y proyectos">Collaborative leadership: coordinating activities and joint projects</li>
+          <li data-en="Critical & reflective thinking: deep and purposeful decision analysis" data-es="Pensamiento crítico y reflexivo: análisis profundo y con propósito">Critical & reflective thinking: deep and purposeful decision analysis</li>
+          <li data-en="Purpose-oriented mindset: connecting personal, spiritual and professional growth" data-es="Orientación al propósito: conecta crecimiento personal, espiritual y profesional">Purpose-oriented mindset: connecting personal, spiritual and professional growth</li>
+          <li data-en="Adaptability: learning new tools and roles quickly" data-es="Adaptabilidad: facilidad para aprender nuevas herramientas y asumir distintos roles">Adaptability: learning new tools and roles quickly</li>
+        </ul>
+      </section>
+
+      <!-- ===== OPTIONAL: TESTIMONIALS, FUTURE GOALS, VIDEO ===== -->
+      <section class="about-section">
+        <h3 class="about-section-title" data-en="Testimonials & Future" data-es="Testimonios y Futuro">Testimonials & Future</h3>
+        <p data-en="Coming soon: Video presentation and testimonials." data-es="Próximamente: video de presentación y testimonios.">Coming soon: Video presentation and testimonials.</p>
+      </section>
     </section>
   </main>
 
-  <!-- FOOTER: Copy the exact footer code from index.html for consistency -->
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3 data-es="Navegación" data-en="Navigation">Navigation</h3>
-        <ul>
-          <li><a href="index.html" data-es="Inicio" data-en="Home">Home</a></li>
-          <li><a href="about.html" data-es="Sobre mí" data-en="About">About</a></li>
-          <li><a href="projects.html" data-es="Proyectos" data-en="Projects">Projects</a></li>
-          <li><a href="contact.html" data-es="Contacto" data-en="Contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3 data-es="Redes Sociales" data-en="Social Media">Social Media</h3>
-        <ul>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3 data-es="Legal" data-en="Legal">Legal</h3>
-        <ul>
-          <li><a href="references.html" data-es="Referencias" data-en="References">References</a></li>
-          <li><a href="#" data-es="Privacidad" data-en="Privacy">Privacy</a></li>
-        </ul>
-      </div>
-      <div class="footer-bottom">
-        <p data-es="© 2025 Augusto Dev. Todos los derechos reservados." data-en="© 2025 Augusto Dev. All rights reserved.">© 2025 Augusto Dev. All rights reserved.</p>
-      </div>
+  <div class="footer-content">
+    <!-- ===== NAVIGATION SECTION ===== -->
+    <div class="footer-section">
+      <h3 data-es="Navegación" data-en="Navigation">Navegación</h3>
+      <ul>
+        <li><a href="index.html" data-es="Inicio" data-en="Home">Inicio</a></li>
+        <li><a href="about.html" data-es="Sobre mí" data-en="About">Sobre mí</a></li>
+        <li><a href="projects.html" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+        <li><a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
+      </ul>
     </div>
-  </footer>
-  <!-- JS for theme/language toggling and main functions -->
+
+    <!-- ===== SOCIAL SECTION (SVG + TEXT) ===== -->
+    <div class="footer-section">
+      <h3 data-es="Contacto & Redes" data-en="Contact & Social">Contacto & Redes</h3>
+      <ul class="footer-social">
+        <li>
+          <a href="https://github.com/LordPuposky" target="_blank" rel="noopener" aria-label="GitHub">
+            <span class="footer-icon">
+              <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.43 2.866 8.185 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.866-.014-1.701-2.782.604-3.369-1.342-3.369-1.342-.455-1.158-1.11-1.467-1.11-1.467-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.893 1.53 2.341 1.088 2.91.832.091-.648.35-1.088.636-1.34-2.22-.253-4.555-1.112-4.555-4.945 0-1.092.39-1.987 1.029-2.687-.103-.254-.446-1.274.098-2.655 0 0 .84-.27 2.75 1.025A9.552 9.552 0 0 1 12 6.845c.85.004 1.705.115 2.504.338 1.908-1.296 2.747-1.025 2.747-1.025.546 1.381.202 2.401.1 2.655.64.7 1.028 1.595 1.028 2.687 0 3.842-2.338 4.689-4.565 4.939.359.309.678.921.678 1.857 0 1.341-.013 2.425-.013 2.754 0 .269.18.58.688.482C19.138 20.202 22 16.453 22 12.021 22 6.484 17.523 2 12 2Z"/></svg>
+            </span>
+            <span data-es="GitHub" data-en="GitHub">GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/yesid-romero-40a710248" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <span class="footer-icon">
+              <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11.334 20.333h-3v-10h3v10zm-1.5-11.5c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.334 11.5h-3v-5.604c0-1.337-.025-3.057-1.864-3.057-1.865 0-2.151 1.454-2.151 2.958v5.703h-3v-10h2.881v1.367h.041c.401-.759 1.381-1.561 2.844-1.561 3.043 0 3.604 2.004 3.604 4.609v5.585z"/></svg>
+            </span>
+            <span data-es="LinkedIn" data-en="LinkedIn">LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <span class="footer-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 13.713l-11.985-8.713h23.97zm11.985-9.713h-23.97c-.66 0-1.015.765-.61 1.243l11.99 8.712c.197.146.492.146.689 0l11.99-8.712c.405-.478.05-1.243-.61-1.243zm-23.985 2.174v13.826c0 .554.449 1 1.005 1h21.99c.556 0 1.005-.446 1.005-1v-13.826l-11.109 8.077c-.233.169-.544.169-.777 0z"/></svg>
+          </span>
+          <span data-es="Correo" data-en="Email">Correo</span>
+          <span class="footer-contact-data">augustomero@gmail.com</span>
+        </li>
+        <li>
+          <span class="footer-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.064 15.064 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1v3.61a1 1 0 0 1-1 1C10.07 22 2 13.93 2 4.99a1 1 0 0 1 1-1h3.6a1 1 0 0 1 1 1c0 1.27.2 2.49.57 3.6a1 1 0 0 1-.24 1.01l-2.2 2.19z"/></svg>
+          </span>
+          <span data-es="Teléfono" data-en="Phone">Teléfono</span>
+          <span class="footer-contact-data">+57 313 806 11 05</span>
+        </li>
+      </ul>
+    </div>
+    <!-- ===== LEGAL SECTION ===== -->
+    <div class="footer-section">
+      <h3 data-es="Legal" data-en="Legal">Legal</h3>
+      <ul>
+        <li><a href="references.html" data-es="Referencias" data-en="References">Referencias</a></li>
+        <li><a href="#" data-es="Privacidad" data-en="Privacy">Privacidad</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-es="&copy; 2025 Augusto Dev. Todos los derechos reservados." data-en="&copy; 2025 Augusto Dev. All rights reserved.">&copy; 2025 Augusto Dev. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+  <!-- ===== MAIN JS (DARK/LIGHT, LANGUAGE, ETC) ===== -->
   <script src="js/main.js"></script>
 </body>
 </html>

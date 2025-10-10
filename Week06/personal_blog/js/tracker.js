@@ -134,7 +134,7 @@ function renderGoals() {
   if (!container) return;
 
   const goals = GoalTracker.getAllGoals();
-  const filteredGoals = currentGoalFilter === 'all' 
+  const filteredGoals = currentGoalFilter === 'all'
     ? goals 
     : goals.filter(g => g.category === currentGoalFilter);
 
