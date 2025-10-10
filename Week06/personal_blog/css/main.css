@@ -525,10 +525,9 @@ a:hover {
 
 /* ===== HIGHLIGHTS SECTION ===== */
 .highlights {
-    padding: var(--spacing-3xl) 0;
+    padding: var(--spacing-3xl) var(--spacing-lg);
     background-color: var(--bg-secondary);
     margin: var(--spacing-3xl) -var(--spacing-lg);
-    padding: var(--spacing-3xl) var(--spacing-lg);
     border-radius: var(--radius-lg);
 }
 
